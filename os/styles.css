@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,
+            #8a2be2,
+            /* Neon Purple */
+            #4b0082,
+            /* Dark Indigo */
+            #0000ff,
+            /* Neon Blue */
+            #00ffff
+            /* Neon Cyan */
+        );
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Card-like Form Containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 130px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+    font-family: "Bangers", cursive;
+    color: #8a2be2;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #00ffff;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #a6c1ee, #fda085);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #fda085, #a6c1ee);
+    transform: translate(3px, 3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide other screens initially */
+#login-container,
+#otp-container,
+#success-container {
+    display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="register-container">
+        <h2>Register</h2>
+        <input type="text" id="reg-username" placeholder="Enter Username">
+        <input type="password" id="reg-password" placeholder="Enter Password">
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div class="container" id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Enter Username">
+        <input type="password" id="login-password" placeholder="Enter Password">
+        <button onclick="loginUser()">Login</button>
+    </div>
+
+    <div class="container" id="otp-container">
+        <h2>Enter OTP</h2>
+        <input type="text" id="otp-input" placeholder="Enter OTP">
+        <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <div class="container" id="success-container">
+        <h2>Access Granted</h2>
+        <p>Login Successful! Welcome to the App.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
